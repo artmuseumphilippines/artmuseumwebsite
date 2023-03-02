@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | National Art Museum of the Philippines</title>
+    <link rel="stylesheet" href="style4.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="navbar">
+  <div class="icon">
+    <h2 class="logo"><a href="home.html">ART GALLERY</a></h2>
+  </div>
+  <div class="menu">
+    <ul>
+      <li class="dropdownmenu"><a href="#">COLLECTIONS</a>
+        <ul id="submenu">
+          <li><a href="painting.html">PAINTINGS</a></li>
+          <li><a href="sculptures.html">SCULPTURES</a></li>
+          <li><a href="sketches.html">SKETCHES/DRAWINGS</a></li>
+          <li><a href="photography.html">PHOTOGRAPHS</a></li>
+        </ul>
+    </li>
+    <li><a href="museum.html">HISTORY</a></li>
+    <li><a href="service.html">SERVICE</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+    </ul>
+  </div>
+  <div class="search">
+        <input class="srch" type="search" value="" id="search" onchange="openPage()">
+        <a href="#"> <button class="btn">Search</button></a>
+
+        <script>
+            function openPage(){
+                var x = document.getElementById("search").value;
+
+                if (x === "paintings"){
+                window.open("painting.html");
+            }
+            if (x === "sculptures"){
+                window.open("sculptures.html");
+            }
+            if (x === "sketches","drawings"){
+                window.open("sketches.html");
+            }
+            if (x === "photographs"){
+                window.open("photographys.html");
+            }
+            if (x === "museum","history"){
+                window.open("museum.html");
+            }
+        }
+        </script>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>We would love to respond to any of your questions.<br>
+    Feel free to be in touch with us.</p>
+  <div class="contact-box">
+  <div class="contact-left">
+    <h3>Sent your request</h3>
+<form action="https://formsubmit.co/artmuseumofthephilippines@gmail.com" method="POST">
+  <div class="input-row">
+  <div class="input-group">
+    <label >First name</label>
+    <input type="text">
+  </div>
+  <div class="input-group">
+    <label >Last name</label>
+    <input type="text" name="name" required>
+  </div>
+                 
+  </div>
+  <div class="input-row">
+  <div class="input-group">
+    <label >Email</label>
+    <input type="email" name="email" required>
+  </div>
+  <div class="input-group">
+    <label >Phone</label>
+    <input type="text" name="phone" required>
+  </div>            
+  </div>
+
+  <div class="input-row">
+  <div class="input-group">
+    <label >Subject</label>
+    <select required class="select">
+    <option value=""disable selected hidden>Select a subject</option>
+    <option value="0">Feedback</option>
+    <option value="1">Suggestion</option>
+    <option value="2">Inquiry</option>
+  </select>
+  
+  </div>
+  </div>
+
+  <label>Message</label>
+  <textarea name="message" rows="5" required></textarea>
+  <button class="btn2" type="submit">Send</button>
+</form>
+  </div>
+  <div class="contact-right">
+    <h3>Reach Us</h3>
+
+  <table>
+    <tr>
+    <td>Email</td>
+    <td>artmuseumofthephilippines@gmail.com</td>
+    </tr>
+    <tr>
+    <td>Phone</td>
+    <td>+63 936 253 9702</td>
+    </tr>
+    <tr>
+    <td>Address</td>
+    <td>Padre Burgos Ave, Ermita, Manila, 1000 Metro Manila
+    </td>
+    </tr>
+  </table>
+  </div>
+  </div>
+  </div>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  
+</body>
+</html>

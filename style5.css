@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+    color: #290806;
+  background: antiquewhite;
+  font-size: 16px;
+  font-family: 'Times New Roman';
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+section{
+  position: relative;
+  width: 100%;
+}
+
+/*##### HERO SECTION #####*/
+
+.hero{
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(14.png);
+  background-size: cover;
+  background-position: center;
+}
+  .content{
+    width: 100%;
+    height: 100%;
+  }
+    .header{
+      position: absolute;
+      top: 55%;
+      width: 100%;
+      text-align: center;
+    }
+  
+
+/*##### ABOUT MYSELF SECTION #####*/
+
+.about-myself{
+  padding: 50px 20px;
+}
+  .content{
+    text-align: center;
+  }
+    h2{
+      color: #290806;
+      font-size: 3em;
+      margin-bottom: 20px; 
+    }
+

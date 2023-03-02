@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  height: 98vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  color: antiquewhite;
+}
+.column {
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background: linear-gradient(antiquewhite 50%, #410d0a 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #240a05;
+  margin: 1em 0;
+}
+p {
+  color: #240a05;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.icon-wrapper {
+  background-color: #C58740;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: antiquewhite;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+.icon-wrapper a{
+  text-decoration: none;
+  color: antiquewhite;
+}
+.card:hover {
+  background-position: 0 100%;
+}
+.card:hover .icon-wrapper {
+  background-color: antiquewhite;
+  color: #410d0a;
+}
+.card:hover .icon-wrapper a{
+  color: #410d0a;
+  transition: 0.5s;
+}
+.card:hover h3 {
+  color: #ffffff;
+}
+.card:hover p {
+  color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 3em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: antiquewhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding-left: 10px;
+    float: left;
+    padding-top: 20px;
+}
+.logo a{
+    text-decoration: none;
+    color:antiquewhite;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 45px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color:antiquewhite;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color:rgb(197, 135, 64);
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid antiquewhite;
+    margin-top: 13px;
+    color:antiquewhite;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #410d0a;
+    border: 1px solid antiquewhite;
+    margin-top: 13px;
+    color: antiquewhite;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.main{
+    width: 100;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(3.png);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.dropdownmenu ul, .dropdownmenu li {
+  margin: 0%;
+}
+.dropdownmenu ul {
+list-style: none;
+}
+.dropdownmenu li {
+float: left;
+position: relative;
+width:auto;
+}
+.dropdownmenu a {
+color: antiquewhite;
+display: block;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+-webkit-transition: all .25s ease;
+-moz-transition: all .25s ease;
+-ms-transition: all .25s ease;
+-o-transition: all .25s ease;
+transition: all .25s ease;
+}
+#submenu {
+opacity: 0;
+position: absolute;
+  padding-top: 10px;
+}
+li:hover ul#submenu {
+opacity: 1;
+top: 40px;
+visibility: visible;
+}
+#submenu li {
+float: none;
+width: 100%;
+}
+#submenu a:hover {
+  color: antiquewhite;
+background: #364c72;
+}
+#submenu a {
+background-color:#303350;
+}

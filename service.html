@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Service | National Museum of the Philippines</title>
+  <link rel="stylesheet" href="style3.css" />
+  <script src="https://kit.fontawesome.com/eeaee5d477.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="main">
+  <div class="navbar">
+    <div class="icon">
+        <h2 class="logo"><a href="home.html">ART GALLERY</a></h2>
+    </div>
+    <div class="menu">
+        <ul>
+          <li class="dropdownmenu"><a href="#">COLLECTIONS</a>
+            <ul id="submenu">
+              \    <li><a href="painting.html">PAINTINGS</a></li>
+              <li><a href="sculptures.html">SCULPTURES</a></li>
+              <li><a href="sketches.html">SKETCHES/DRAWINGS</a></li>
+              <li><a href="photography.html">PHOTOGRAPHS</a></li>
+            </ul>
+        </li>
+        <li><a href="museum.html">HISTORY</a></li>
+        <li><a href="service.html">SERVICE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+    </div>
+    <div class="search">
+      <input class="srch" type="search" value="" id="search" onchange="openPage()">
+      <a href="#"> <button class="btn">Search</button></a>
+
+      <script>
+          function openPage(){
+              var x = document.getElementById("search").value;
+
+              if (x === "paintings"){
+              window.open("painting.html");
+          }
+          if (x === "sculptures"){
+              window.open("sculptures.html");
+          }
+          if (x === "sketches","drawings"){
+              window.open("sketches.html");
+          }
+          if (x === "photographs"){
+              window.open("photography.html");
+          }
+          if (x === "museum","history"){
+              window.open("museum.html");
+          }
+      }
+      </script>
+  </div>
+    </div>
+<section>
+  <div class="row">
+    <h2>Our Services</h2>
+  </div>
+  <div class="row">
+  <div class="column">
+  <div class="card">
+  <div class="icon-wrapper">
+    <a href="https://weblinks.nationalmuseum.gov.ph/wp-content/uploads/2022/11/01105135/NMP-VISITOR-GUIDELINES-AS-OF-11.2.2022.pdf"><i class="fa-solid fa-calendar-days"></a></i>
+  </div>
+    <h3>Reserve a Museum visit</h3>
+      <p>Schedule a visit to the museum.</p>
+  </div>
+  </div>
+  <div class="column">
+  <div class="card">
+  <div class="icon-wrapper">
+    <a href="https://weblinks.nationalmuseum.gov.ph/wp-content/uploads/2023/01/05104304/GUIDELINES-ON-SCHOOL-THESIS-AND-OTHER-INFORMATION-SERVICES_DEC-2022.pdf"><i class="fa-solid fa-gears"></a></i>
+  </div>
+    <h3>Technical assistance</h3>
+      <p>Study about the arts within the museum.</p>
+  </div>
+  </div>
+  <div class="column">
+  <div class="card">
+  <div class="icon-wrapper">
+    <a href="https://weblinks.nationalmuseum.gov.ph/wp-content/uploads/2023/01/05104302/GUIDELINES-ON-MEDIA-COVERAGE-AND-INTERVIEW_DEC-2022.pdf"><i class="fa-solid fa-photo-film"></a></i>
+  </div>
+    <h3>Media coverage and Interviews</h3>
+    <p>Stay updated on the latest news and interviews about the museum.</p>
+    <a href="https://weblinks.nationalmuseum.gov.ph/wp-content/uploads/2021/11/01113404/Application-Form-for-Location-Shoot-and-Media-Coverage-2021-2.pdf"><p>Application form</p></a>
+  </div>
+  </div>
+  <div class="column">
+  <div class="card">
+  <div class="icon-wrapper">
+    <a href="https://weblinks.nationalmuseum.gov.ph/wp-content/uploads/2021/11/01113403/NMP_Guidelines-on-Photo-Reproduction-of-Museum-Collection_2021-2.pdf"><i class="fa-sharp fa-solid fa-palette"></a></i>
+  </div>
+    <h3>Photo Reproductions of the Art Collection</h3>
+      <p>Acquire a photocopy of the artwork.</p>
+      <a href="Application-Form-for-Photo-Reproduction-of-NMP-Collection-and-Herigate-Sites-2021-1-1.docx"><p>Application form</p></a>
+  </div>
+  </div>
+  <div class="column">
+  <div class="card">
+  <div class="icon-wrapper">
+    <a href="https://weblinks.nationalmuseum.gov.ph/wp-content/uploads/2023/01/05104304/GUIDELINES-ON-PRENUPTIAL-PREDEBUT-AND-OTHER-LOCATION-SHOOT_DEC-2022-1.pdf"><i class="fa-solid fa-camera"></a></i>
+  </div>
+    <h3>Location Shoots</h3>
+    <p>Request to film or photograph in the museum.</p>
+    <a href="https://weblinks.nationalmuseum.gov.ph/wp-content/uploads/2021/11/01113404/Application-Form-for-Location-Shoot-and-Media-Coverage-2021-2.pdf"><p>Application form</p></a>
+  </div>
+  </div>
+  <div class="column">
+  <div class="card">
+  <div class="icon-wrapper">
+    <a href="https://weblinks.nationalmuseum.gov.ph/wp-content/uploads/2023/01/05104305/GUIDELINES-ON-VENURE-RENTAL_DEC-2022.pdf"><i class="fa-solid fa-building-columns"></a></i>
+  </div>
+    <h3>Venue Rentals</h3>
+    <p>Schedule to hold an event.</p>
+    <a href="https://weblinks.nationalmuseum.gov.ph/wp-content/uploads/2021/11/01113413/Application-Form-for-Venue-Rental-2021-1.pdf"><p>Application form</p></a>
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+</body>
+</html>

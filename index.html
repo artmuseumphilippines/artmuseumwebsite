@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>National Art Museum of the Philippines Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <div class="navbar">
+    <div class="icon">
+        <h2 class="logo"><a href="home.html">ART GALLERY</a></h2>
+    </div>
+    <div class="menu">
+        <ul>
+        <li class="dropdownmenu"><a href="#">COLLECTIONS</a>
+            <ul id="submenu">
+                <li><a href="painting.html">PAINTINGS</a></li>
+                <li><a href="sculptures.html">SCULPTURES</a></li>
+                <li><a href="sketches.html">SKETCHES/DRAWINGS</a></li>
+                <li><a href="photography.html">PHOTOGRAPHS</a></li>
+            </ul>
+        </li>
+        <li><a href="museum.html">HISTORY</a></li>
+        <li><a href="service.html">SERVICE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+
+    </div>    
+    <div class="search">
+        <input class="srch" type="search" value="" id="search" onchange="openPage()">
+        <a href="#"> <button class="btn">Search</button></a>
+
+        <script>
+            function openPage(){
+                var x = document.getElementById("search").value;
+
+                if (x === "paintings"){
+                window.open("painting.html");
+            }
+            if (x === "sculptures"){
+                window.open("sculptures.html");
+            }
+            if (x === "sketches","drawings"){
+                window.open("sketches.html");
+            }
+            if (x === "photographs"){
+                window.open("photography.html");
+            }
+            if (x === "museum","history"){
+                window.open("museum.html");
+            }
+        }
+        </script>
+    </div>
+    </div>
+    <div class="content">
+        <h1>National Art Museum of<br>the Philippines</h1>
+        <p class="par">This website’s objective is to give our viewers a place to learn more about<br>our artifacts and the museum itself. It's a great opportunity for us to connect <br>with new readers and explain our business to them so they can see how we <br>can benefit them. We can give our readers some brief history, and providing <br> informational materials for our visitors to learn more about our museum.</p>
+        <button class="cn"> <a href="home.html">GO TO HOME PAGE</a></button>     
+    </div>
+    </div>
+    </div>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
